@@ -6,14 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ---------------------- PostgreSQL connection (hardcoded – no .env) ----------------------
 const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "finalllll",
-  password: "12345",
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false } // Required for Railway
 });
+
 
 // Demo mode: mock taste data when PostgreSQL is not running (all menu ids)
 const DEMO_FOOD_NAMES = {
