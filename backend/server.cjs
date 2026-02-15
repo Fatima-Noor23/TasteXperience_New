@@ -11,7 +11,6 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false } // Required for Railway
 });
 
-
 // Demo mode: mock taste data when PostgreSQL is not running (all menu ids)
 const DEMO_FOOD_NAMES = {
   1: "Cheezy Sticks",
