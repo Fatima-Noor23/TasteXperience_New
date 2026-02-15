@@ -1,0 +1,119 @@
+.site-footer {
+  background: linear-gradient(135deg, #E95A34, #f9a828);
+  color: #fff;
+  padding: 60px 30px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h4 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 2px solid #ffffff55;
+  padding-bottom: 5px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #f9f9f9;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #272727;
+  text-decoration: underline;
+}
+
+/* Form */
+.footer-form {
+  display: flex;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.footer-form input {
+  padding: 10px 14px;
+  border: none;
+  flex-grow: 1;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.footer-form button {
+  background-color: #E95A34;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-form button:hover {
+  background-color: #c44525;
+}
+
+/* Social Icons */
+.footer-socials {
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #272727;
+  transform: scale(1.2);
+}
+
+/* Bottom Copy */
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  color: #fefefe;
+  border-top: 1px solid #ffffff44;
+  padding-top: 15px;
+  opacity: 0.9;
+}

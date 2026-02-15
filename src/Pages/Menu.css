@@ -1,0 +1,219 @@
+/* Root Container */
+.menu-container {
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #fceabb, #f8b500, #e53935, #f7b733);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  text-align: center;
+}
+
+/* Animated Background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Title & Subtitle */
+.menu-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-subtitle {
+  font-size: 18px;
+  color: #456a2d;
+  margin-bottom: 40px;
+}
+
+/* Flip Card Slider */
+.menu-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+/* Flip Card Container */
+.menu-flip-card {
+  flex: 0 0 260px;
+  height: 360px;
+  perspective: 1000px;
+  scroll-snap-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.menu-flip-card:hover {
+  box-shadow: 0 0 20px rgba(255, 100, 100, 0.4);
+}
+
+/* Inner Flip Structure */
+.menu-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.menu-flip-card:hover .menu-flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Flip Front */
+.menu-flip-front {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-flip-front img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu-flip-front h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #274502;
+}
+
+/* Flip Back */
+.menu-flip-back {
+  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 16px;
+  padding: 20px;
+  color: #274502;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-flip-back p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.menu-flip-back button {
+  background-color: #274502;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu-flip-back button:hover {
+  background-color: #3a5f07;
+}
+
+/* .menu-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.menu-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.menu-slider::-webkit-scrollbar-thumb {
+  background: #7ea048;
+  border-radius: 20px;
+}
+
+.menu-slider::-webkit-scrollbar-track {
+  background: #e4e5e0;
+} */
+
+
+.menu-grid {
+  columns: 3 300px;
+  column-gap: 20px;
+}
+
+.menu-card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 20px 10px;
+  margin: 0 60px;
+}
+
+.menu-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #274502;
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: #3a5f07;
+}
+
+

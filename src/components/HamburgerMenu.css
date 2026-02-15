@@ -1,0 +1,145 @@
+/* 🔸 Hamburger Icon */
+.hamburger-icon {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 28px;
+  background: linear-gradient(136deg, #E95A34, #f9a828);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon:hover {
+  transform: scale(1.1);
+}
+
+/* 🔸 Sidebar Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: #fff;
+  color: #E95A34;
+  overflow-x: hidden;
+  transition: width 0.6s ease, transform 0.6s ease;
+  transform-origin: right center;
+  transform: rotateY(90deg);
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.side-menu.open {
+  width: 280px;
+  transform: rotateY(0deg);
+}
+
+/* 🔸 Menu Header */
+.menu-header {
+  padding: 30px 20px 20px; /* Added extra top padding */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 🔸 Close Button */
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1001;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #333;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.close-btn {
+  background: linear-gradient(135deg, #f9a828, #E95A34);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 6px;
+  left : 220px;
+}
+
+/* 🛠️ Fix: Maintain gradient color on hover */
+.close-btn:hover {
+  background: linear-gradient(135deg, #E95A34, #f9a828); /* flipped gradient for subtle effect */
+  transform: scale(1.1) rotate(90deg);
+  color: #fff;
+}
+
+.close-btn:hover .close-icon {
+  stroke: #ff3333; /* red on hover for visibility */
+  transform: scale(1.1);
+  transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+.side-menu {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  /* Add other sidebar styles */
+}
+
+
+
+
+/* 🔸 Links */
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #E95A34;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #f9a828;
+  transform: translateX(10px);
+}
+
+/* Responsive Hint */
+@media (max-width: 480px) {
+  .side-menu.open {
+    width: 100%;
+  }
+}

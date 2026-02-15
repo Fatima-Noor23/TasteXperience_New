@@ -1,0 +1,71 @@
+.feedback-container {
+  background: linear-gradient(135deg, #fff5f0, #fffaf6);
+  color: #3c1f00;
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.feedback-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #E95A34;
+}
+
+.feedback-subtitle {
+  font-size: 16px;
+  color: #f96f0f;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff8f4;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(233, 90, 52, 0.15);
+  text-align: left;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+  margin-bottom: 5px;
+  color: #f96f0f;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ffc38d;
+  font-size: 14px;
+  color: #4a1f00;
+  background-color: #fffaf5;
+}
+
+.feedback-form button {
+  background: linear-gradient(135deg, #E95A34, #f9a828);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(249, 168, 40, 0.3);
+}
+
+.feedback-form button:hover {
+  background: linear-gradient(135deg, #f9a828, #E95A34);
+  transform: scale(1.05);
+}
